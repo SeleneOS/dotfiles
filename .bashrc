@@ -8,7 +8,7 @@
 alias ls='ls --color=auto'
 
 
-## Custom ACharluk ##
+## Custom Selene OS ##
 
 if [ -f ~/.seleneos/.bash_aliases ]; then
 . ~/.seleneos/.bash_aliases

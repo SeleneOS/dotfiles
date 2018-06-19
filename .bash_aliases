@@ -35,8 +35,8 @@ alias .d='cd ~/documents'
 alias .m='cd ~/music'
 alias .p='cd ~/pictures'
 alias .v='cd ~/videos'
-alias .s='cd ~/.acharluk/scripts'
-alias .a='cd ~/.acharluk'
+alias .s='cd ~/.seleneos/scripts'
+alias .a='cd ~/.seleneos'
 alias .c='cd ~/.config'
 
 alias l..='l ..'
@@ -90,12 +90,12 @@ gcp() { git add . && git commit -m "$1" && git push; }
 # Easy TODO list
 todo() {
 	if [ $# -gt 0 ]; then
-		echo "[] $@" >> ~/.acharluk/TODO;
+		echo "[] $@" >> ~/.seleneos/TODO;
 	else
-		$EDITOR ~/.acharluk/TODO;
+		$EDITOR ~/.seleneos/TODO;
 	fi
 }
-alias ttodo='$EDITOR2 ~/.acharluk/TODO'
+alias ttodo='$EDITOR2 ~/.seleneos/TODO'
 alias t='todo'
 alias tt='ttodo'
 

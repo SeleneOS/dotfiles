@@ -5,7 +5,7 @@
 [[ -f ~/.seleneos/.bashrc ]] && . ~/.seleneos/.bashrc
 
 
-## Custom ACharluk ##
+## Custom Selene OS ##
 
 export PATH=$PATH:~/.seleneos/scripts
 export TERMINAL=xfce4-terminal
