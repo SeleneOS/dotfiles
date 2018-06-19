@@ -14,6 +14,6 @@ export EDITOR=vim
 export EDITOR2=code
 export LOCATION=Granada
 
-[[ -f ~/.seleneos/.init_graphical ]] && . ~/.seleneos/.init_graphical
+[[ -f ~/.init_graphical ]] && . ~/.init_graphical
 
 ## Your custom config ##
