@@ -5,12 +5,15 @@ cd /tmp
 if [[ -f /tmp/dotfiles ]]; then
     rm -rf /tmp/dotfiles;
 fi
-git clone https://github.com/SeleneOS/dotfiles.git && cd dotfiles/user
-
-selene.backup
+git clone https://github.com/SeleneOS/dotfiles.git && cd dotfiles
 
 echo "Updating .seleneos directory"
-cp -rf . ~/.seleneos
+cp -rf scripts ~/.seleneos
+cp -rf .bash_aliases ~/.seleneos
+cp -rf .bash_profile ~/.seleneos
+cp -rf .bashrc ~/.seleneos
+
+rm ~/.seleneos/README.md
 
 echo "Removing /tmp/dotfiles"
 rm -rf /tmp/dotfiles
