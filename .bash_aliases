@@ -105,11 +105,12 @@ fwm() { while inotifywait "$1"; do make; done }
 fwmr() { while inotifywait "$1"; do make run; done }
 
 
-## TODO: Use Yay instead of Yaourt ##
-# Shortcuts for pacman/yaourt
-# alias y='yaourt --noconfirm'
-# alias yi='yaourt -S --noconfirm'
-# alias yr='sudo pacman -Rs'
-# alias yu='sudo pacman -Su'
-# alias yyu='yaourt -Syu --aur --noconfirm'
-# alias yrd='s pacman -Rs $(pacman -Qtdq)'
+# Shortcuts for pacman/yay
+alias pacman='sudo pacman'
+alias y='yay'
+alias u='yay -Syu --noconfirm'
+alias yn='yay --noconfirm'
+alias yi='yay -S'
+alias yin='yay -S --noconfirm'
+alias yr='sudo pacman -Rs'
+alias yrd='s pacman -Rs $(pacman -Qtdq)'
