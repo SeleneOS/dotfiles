@@ -90,12 +90,12 @@ gcp() { git add . && git commit -m "$1" && git push; }
 # Easy TODO list
 todo() {
 	if [ $# -gt 0 ]; then
-		echo "[] $@" >> ~/.seleneos/TODO;
+		echo "[] $@" >> ~/.seleneos_data/TODO;
 	else
-		$EDITOR ~/.seleneos/TODO;
+		$EDITOR ~/.seleneos_data/TODO;
 	fi
 }
-alias ttodo='$EDITOR2 ~/.seleneos/TODO'
+alias ttodo='$EDITOR2 ~/.seleneos_data/TODO'
 alias t='todo'
 alias tt='ttodo'
 
@@ -114,3 +114,6 @@ alias yi='yay -S'
 alias yin='yay -S --noconfirm'
 alias yr='sudo pacman -Rs'
 alias yrd='s pacman -Rs $(pacman -Qtdq)'
+
+# Shortcuts for Selene OS
+alias slu='selene.update'
