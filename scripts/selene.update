@@ -1,19 +1,7 @@
 #!/bin/bash
 
-echo "Creating temporary folder /tmp/dotfiles"
-cd /tmp
-if [[ -f /tmp/dotfiles ]]; then
-    rm -rf /tmp/dotfiles;
+if [[ -d ~/.seleneos_backup ]]; then
+    rm -rf ~/.seleneos_backup;
 fi
-git clone https://github.com/SeleneOS/dotfiles.git && cd dotfiles
-
-echo "Updating .seleneos directory"
-cp -rf scripts ~/.seleneos
-cp -rf .bash_aliases ~/.seleneos
-cp -rf .bash_profile ~/.seleneos
-cp -rf .bashrc ~/.seleneos
-
-rm ~/.seleneos/README.md
-
-echo "Removing /tmp/dotfiles"
-rm -rf /tmp/dotfiles
+cp -rf ~/.seleneos ~/.seleneos_backup
+cd ~/.seleneos && git pull
