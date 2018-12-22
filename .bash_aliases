@@ -104,16 +104,9 @@ fwl() { while inotifywait "$1"; do pdflatex $1; done }
 fwm() { while inotifywait "$1"; do make; done }
 fwmr() { while inotifywait "$1"; do make run; done }
 
-
-# Shortcuts for pacman/yay
-alias pacman='sudo pacman'
-alias y='yay'
-alias u='yay -Syu --noconfirm'
-alias yn='yay --noconfirm'
-alias yi='yay -S'
-alias yin='yay -S --noconfirm'
-alias yr='sudo pacman -Rs'
-alias yrd='s pacman -Rs $(pacman -Qtdq)'
-
 # Shortcuts for Selene OS
 alias slu='selene.update'
+
+if [ -f ~/.seleneos/aliases_$DISTRO ]; then
+. ~/.seleneos/aliases_$DISTRO
+fi

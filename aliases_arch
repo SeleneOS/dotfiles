@@ -1,0 +1,9 @@
+# Shortcuts for pacman/yay
+alias pacman='sudo pacman'
+alias y='yay'
+alias u='yay -Syu --noconfirm'
+alias yn='yay --noconfirm'
+alias yi='yay -S'
+alias yin='yay -S --noconfirm'
+alias yr='sudo pacman -Rs'
+alias yrd='s pacman -Rs $(pacman -Qtdq)'

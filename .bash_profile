@@ -13,6 +13,7 @@ export BROWSER=chromium
 export EDITOR=vim
 export EDITOR2=code
 export LOCATION=Granada
+export DISTRO=arch
 
 [[ -f ~/.init_graphical ]] && . ~/.init_graphical
 

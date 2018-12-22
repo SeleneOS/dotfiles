@@ -1,0 +1,9 @@
+# Shortcuts for apt
+alias apt='sudo apt'
+alias y='sudo apt update && sudo apt upgrade'
+alias u='sudo apt update && sudo apt upgrade -y'
+alias yn='sudo apt install -y '
+alias yi='sudo apt install'
+alias yin='sudo apt install -y '
+alias yr='sudo apt remove '
+alias yrd='sudo apt autoremove'

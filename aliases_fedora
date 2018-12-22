@@ -1,0 +1,8 @@
+# Shortcuts for dnf
+alias dnf='sudo dnf'
+alias y='sudo dnf update'
+alias u='sudo apt update -y'
+alias yn='sudo dnf install -y '
+alias yi='sudo dnf install '
+alias yr='sudo dnf remove '
+alias yrd='sudo dnf autoremove'
